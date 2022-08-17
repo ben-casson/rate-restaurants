@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Card } from './components/card.js'
 import uuid from 'uuid/v1'
 import './App.css';
+import logo from './logo.svg';
 
 class App extends Component {
   constructor(props) {
@@ -60,7 +61,7 @@ class App extends Component {
       <div className="main-body">
         {[...this.state.restaurants].map((restaurant, index) => {
           let name = restaurant.name
-          let image = restaurant.image
+          let image = logo
           let details = restaurant.details
           let starsSelected = restaurant.starsSelected
           let id = restaurant.id
